@@ -399,3 +399,89 @@ fieldset {
 textarea {
   resize: vertical;
 }
+footer {
+  padding: 30px;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+.title {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-items: baseline;
+  justify-content: space-around;
+  display: flex;
+  font-size: 20px;
+  padding: 20px;
+}
+.title h1 {
+  font-size: 30px;
+}
+.title nav {
+  text-align: center;
+  display: flex;
+  width: 300px;
+  justify-content: space-evenly;
+}
+.title nav a {
+  text-decoration: none;
+  color: #8786A4;
+}
+.title nav a:hover {
+  color: #FF2E4D;
+  text-decoration: underline;
+}
+.body h3 {
+  padding: 80px;
+  display: flex;
+  font-size: 80px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-color: #35283A;
+}
+.info {
+  justify-content: center;
+  display: flex;
+  padding: 0 30px;
+  margin-top: -6%;
+}
+.info h2 {
+  display: flex;
+  font-size: 50px;
+  margin: 5%;
+  padding: 30px;
+  color: white;
+  background-color: #8786A4;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30px;
+  padding: 30px;
+  margin-bottom: 5%;
+}
+.bottom .button {
+  background-color: #35283A;
+  color: white;
+  width: 200px;
+  padding: 10px 10px;
+  font-size: 25px;
+  border: 1px solid black;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.bottom .button:hover {
+  color: #35283A;
+  background-color: white;
+}
+html {
+  background-color: #F1F1F1;
+}
