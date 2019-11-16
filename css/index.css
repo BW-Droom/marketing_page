@@ -410,9 +410,15 @@ h4,
 h5 {
   font-family: 'Assistant', sans-serif;
   font-weight: bold;
+  color: #222;
+  cursor: default;
 }
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+}
+a {
+  color: #222;
+  text-decoration: none;
 }
 .container {
   margin-left: auto;
@@ -446,7 +452,7 @@ h1 {
   }
 }
 .nav-bar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -489,4 +495,84 @@ h1 {
   .nav-bar .nav-container {
     width: 1600px;
   }
+}
+.nav-bar .nav-links .active {
+  color: #6E80D2;
+}
+.nav-bar .nav-links a {
+  position: relative;
+  font-size: 1rem;
+  margin: 0 5px;
+  padding: 6px 16px;
+  -webkit-transition: 100ms all ease;
+  -moz-transition: 100ms all ease;
+  -ms-transition: 100ms all ease;
+  -o-transition: 100ms all ease;
+  transition: 100ms all ease;
+}
+.nav-bar .nav-links a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  background-color: #6E80D2;
+  -webkit-transition: 100ms all ease;
+  -moz-transition: 100ms all ease;
+  -ms-transition: 100ms all ease;
+  -o-transition: 100ms all ease;
+  transition: 100ms all ease;
+}
+.nav-bar .nav-links a:hover {
+  color: #fff;
+}
+.nav-bar .nav-links a:hover::before {
+  top: 0%;
+  height: 100%;
+}
+.nav-bar .menu-btn-icon {
+  cursor: pointer;
+  padding: 10px;
+  -webkit-transition: 100ms all ease;
+  -moz-transition: 100ms all ease;
+  -ms-transition: 100ms all ease;
+  -o-transition: 100ms all ease;
+  transition: 100ms all ease;
+}
+.nav-bar .menu-btn-icon:hover path {
+  fill: #6E80D2;
+}
+.nav-bar .menu-btn-icon svg {
+  width: 28px;
+  height: 28px;
+}
+.nav-bar .menu-btn-icon svg path {
+  fill: #222;
+}
+@media (max-width: 800px) {
+  .nav-bar .nav-links {
+    display: none;
+  }
+}
+@media (min-width: 801px) {
+  .nav-bar .menu-btn-icon {
+    display: none;
+  }
+}
+.nav-bar.open .nav-links {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 70px;
+  width: 100%;
+}
+.nav-bar.open .nav-links a {
+  display: block;
+  padding: 20px;
+}
+.nav-bar.open .menu-btn-icon {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
