@@ -467,6 +467,7 @@ footer {
   margin-bottom: 5%;
 }
 .bottom .button {
+  text-decoration: none;
   background-color: #35283A;
   color: white;
   width: 200px;
@@ -481,6 +482,38 @@ footer {
 .bottom .button:hover {
   color: #35283A;
   background-color: white;
+}
+.why {
+  padding: 80px;
+  display: flex;
+  font-size: 80px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-color: #35283A;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.body h2 {
+  font-size: 50px;
+  padding: 20px;
+}
+.body .easier {
+  background-color: #F1F1F1;
+  padding: 10px 50px;
+}
+.body .faster {
+  color: white;
+  background-color: #35283A;
+  padding: 100px 50px;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+.body .smarter {
+  background-color: #F1F1F1;
+  padding: 10px 50px;
 }
 html {
   background-color: #F1F1F1;
