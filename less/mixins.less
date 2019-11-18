@@ -1,16 +1,16 @@
-.btns(@bg-color,@color){
-    background-color: @bg-color;
-    color: @color;
-    width: 200px;
-    padding: 10px 10px;
-    font-size: 25px;
-    border: 1px solid black;
-    border-radius: 20px;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    &:hover{
-      color:@bg-color;
-      background-color: @color;
-    }
+.btns(@bg-color, @color) {
+  background-color: @bg-color;
+  color: @color;
+  border-radius: 5px;
+  opacity: 0.9;
+  margin-top: -2rem;
+  padding: 1rem 3rem;
+  background-color: @dark-alt;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+  opacity: 0.6;
   }
+}
+
