@@ -10,13 +10,13 @@
   .box-shadow(0px, -2px, 18px, 0px, rgba(0,0,0, .2));
 
   .nav-container {
-    height: 70px;
+    height: @navbar-height;
     margin: 0 20px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    .container()
+    .container();
   }
 
   .nav-links {
@@ -96,7 +96,6 @@
 
 // Mobile menu open
 .nav-bar.open {
-  background-color: #fff;
 
   .nav-links {
     display: block;
@@ -104,6 +103,7 @@
     left: 0;
     top: 70px;
     width: 100%;
+    background-color: #fff;
 
     a {
       display: block;

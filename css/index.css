@@ -408,6 +408,7 @@ textarea {
 body {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
+  margin-top: 70px;
 }
 h1,
 h2,
@@ -572,15 +573,13 @@ a {
     display: none;
   }
 }
-.nav-bar.open {
-  background-color: #fff;
-}
 .nav-bar.open .nav-links {
   display: block;
   position: fixed;
   left: 0;
   top: 70px;
   width: 100%;
+  background-color: #fff;
 }
 .nav-bar.open .nav-links a {
   display: block;
