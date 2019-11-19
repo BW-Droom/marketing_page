@@ -405,8 +405,6 @@ fieldset {
 textarea {
   resize: vertical;
 }
-
-
 body {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
@@ -587,7 +585,7 @@ a {
 .nav-bar.open .menu-btn-icon {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
-=======
+}
 footer {
   padding: 1.5rem;
   border-top: 1px solid black;
