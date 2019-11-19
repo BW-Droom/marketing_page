@@ -1,12 +1,18 @@
 .main-content {
     background-color: @dark-shades;
-    height: 45vh;
-    .center();
-   
+    height: 55vh;
+    min-height: 400px;
+    .flex-box(row, center, flex-start);
+
     .title {
         color: @text-white;
-        font-size: 4rem;
-        letter-spacing: 4px;
+        font-size: 6rem;
+        letter-spacing: 3px;
+        margin-top: 15vh;
+
+        @media (max-height: 725px) {
+          margin-top: 100px;
+        }
     }
 }
 
@@ -16,11 +22,9 @@
     font-size: 2.5rem;
 
     .btn {
-        
-        .btns(@dark-alt, @text-white);
-       
+        .button(@text-white, @dark-shades);
     }
-    
+
 }
 .bottom {
     display: block;
@@ -32,14 +36,11 @@
         margin-top: 8rem;
         margin-bottom: 4.5rem;
         text-decoration: underline;
-
     }
 
     .about-btn {
         font-size: 1.5rem;
-        .btns(@dark-alt, @text-white);
         text-decoration: none;
-        
-       
+        .button(@text-white, @dark-shades);
     }
 }
