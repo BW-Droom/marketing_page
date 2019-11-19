@@ -1,3 +1,9 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -399,6 +405,8 @@ fieldset {
 textarea {
   resize: vertical;
 }
+
+
 body {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
@@ -579,4 +587,100 @@ a {
 .nav-bar.open .menu-btn-icon {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+=======
+footer {
+  padding: 1.5rem;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.main-content {
+  background-color: #35283A;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.main-content .title {
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 4px;
+}
+.btn-group {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2.5rem;
+}
+.btn-group .btn {
+  color: #fff;
+  border-radius: 5px;
+  opacity: 0.9;
+  margin-top: -2rem;
+  padding: 1rem 3rem;
+  background-color: #8786A4;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+.btn-group .btn:hover {
+  opacity: 0.6;
+}
+.bottom {
+  display: block;
+  text-align: center;
+  height: 30vh;
+}
+.bottom .learn-more {
+  font-size: 2.5rem;
+  margin-top: 8rem;
+  margin-bottom: 4.5rem;
+  text-decoration: underline;
+}
+.bottom .about-btn {
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 5px;
+  opacity: 0.9;
+  margin-top: -2rem;
+  padding: 1rem 3rem;
+  background-color: #8786A4;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.bottom .about-btn:hover {
+  opacity: 0.6;
+}
+.why {
+  padding: 80px;
+  display: flex;
+  font-size: 80px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-color: #35283A;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.body h2 {
+  font-size: 50px;
+  padding: 20px;
+}
+.body .easier {
+  background-color: #F1F1F1;
+  padding: 10px 50px;
+}
+.body .faster {
+  color: white;
+  background-color: #35283A;
+  padding: 100px 50px;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+.body .smarter {
+  background-color: #F1F1F1;
+  padding: 10px 50px;
 }

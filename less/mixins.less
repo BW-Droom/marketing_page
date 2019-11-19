@@ -1,4 +1,3 @@
-
 //  e.g     all     100ms  ease
 .transition(@which, @time, @effect) {
   -webkit-transition: @time @which @effect;
@@ -8,10 +7,34 @@
           transition: @time @which @effect;
 }
 
-//  e.g     0px          2px        4px        10px      #000
+//  e.g     0px          2px        4px     10px      #000
 .box-shadow(@horizontal, @vertical, @blur, @spread, @color) {
   -webkit-box-shadow: @horizontal @vertical @blur @spread @color;
      -moz-box-shadow: @horizontal @vertical @blur @spread @color;
       -ms-box-shadow: @horizontal @vertical @blur @spread @color;
           box-shadow: @horizontal @vertical @blur @spread @color;
+ 
+  
+.btns(@bg-color, @color) {
+  background-color: @bg-color;
+  color: @color;
+  border-radius: 5px;
+  opacity: 0.9;
+  margin-top: -2rem;
+  padding: 1rem 3rem;
+  background-color: @dark-alt;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+  opacity: 0.6;
+  }
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
