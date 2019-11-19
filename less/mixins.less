@@ -1,3 +1,15 @@
+
+//           none
+.user-select(@attr) {
+  -webkit-touch-callout: @attr;
+    -webkit-user-select: @attr;
+     -khtml-user-select: @attr;
+       -moz-user-select: @attr;
+        -ms-user-select: @attr;
+            user-select: @attr;
+}
+
+
 //  e.g     all     100ms  ease
 .transition(@which, @time, @effect) {
   -webkit-transition: @time @which @effect;
@@ -6,6 +18,7 @@
        -o-transition: @time @which @effect;
           transition: @time @which @effect;
 }
+
 
 //  e.g     0px          2px        4px    0px     #000
 .box-shadow(@horizontal, @vertical, @blur, @spread, @color) {
@@ -36,6 +49,7 @@
   border-radius: 40px;
   padding: 1rem 3.5rem;
   background-color: @bg-color;
+  .user-select(none);
   .transition(all, 100ms, ease);
   .box-shadow(0px, 3px, 6px, 0px, lighten(@bg-color, 20%));
 

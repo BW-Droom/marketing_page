@@ -468,6 +468,12 @@ a {
   border-radius: 40px;
   padding: 1rem 3.5rem;
   background-color: #35283A;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transition: 100ms all ease;
   -moz-transition: 100ms all ease;
   -ms-transition: 100ms all ease;
@@ -600,7 +606,7 @@ a {
   display: block;
   position: fixed;
   left: 0;
-  top: 70px;
+  top: 65px;
   width: 100%;
   background-color: #fff;
 }
@@ -661,6 +667,12 @@ footer p {
   border-radius: 40px;
   padding: 1rem 3.5rem;
   background-color: #8786A4;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transition: 100ms all ease;
   -moz-transition: 100ms all ease;
   -ms-transition: 100ms all ease;
