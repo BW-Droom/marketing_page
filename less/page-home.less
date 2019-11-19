@@ -1,46 +1,58 @@
+
 .main-content {
-    background-color: @dark-shades;
-    height: 55vh;
-    min-height: 400px;
-    .flex-box(row, center, flex-start);
+  background-color: @dark-shades;
+  height: 54vh;
+  min-height: 400px;
+  .flex-box(row, center, flex-start);
 
-    .title {
-        color: @text-white;
-        font-size: 6rem;
-        letter-spacing: 3px;
-        margin-top: 15vh;
+  .title {
+    color: @text-white;
+    font-size: 6rem;
+    letter-spacing: 3px;
+    margin-top: 15vh;
 
-        @media (max-height: 725px) {
-          margin-top: 100px;
-        }
+    @media (max-height: 725px) {
+      margin-top: 100px;
     }
+  }
 }
 
 .btn-group {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: -3rem;
 
-    .btn {
-        .button(@text-white, @dark-shades);
+  .btn {
+    position: relative;
+    .button(@text-white, @dark-alt, @main-color);
+    .flex-box(row, center, center);
+    padding: 0;
+    width: 350px;
+    height: 150px;
+    font-size: 3rem;
+    border-radius: 1px;
+    margin: 0 2.8rem;
+
+    &:hover {
+      margin-top: -2px;
     }
+  }
 
 }
+
 .bottom {
-    display: block;
-    text-align: center;
-    height: 30vh;
+  display: block;
+  text-align: center;
+  height: 30vh;
 
-    .learn-more {
-        font-size: 2.5rem;
-        margin-top: 8rem;
-        margin-bottom: 4.5rem;
-        text-decoration: underline;
-    }
+  .learn-more {
+    font-size: 2.5rem;
+    margin-top: 8rem;
+    margin-bottom: 4.5rem;
+    text-decoration: underline;
+  }
 
-    .about-btn {
-        font-size: 1.5rem;
-        text-decoration: none;
-        .button(@text-white, @dark-shades);
-    }
+  .about-btn {
+
+  }
 }
