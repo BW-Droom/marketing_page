@@ -1,3 +1,9 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -400,88 +406,68 @@ textarea {
   resize: vertical;
 }
 footer {
-  padding: 30px;
+  padding: 1.5rem;
   border-top: 1px solid black;
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
-* {
-  box-sizing: border-box;
-  margin: auto;
-}
-.title {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  align-items: baseline;
-  justify-content: space-around;
+.main-content {
+  background-color: #35283A;
+  height: 45vh;
   display: flex;
-  font-size: 20px;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.title h1 {
-  font-size: 30px;
+.main-content .title {
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 4px;
 }
-.title nav {
-  text-align: center;
+.btn-group {
   display: flex;
-  width: 300px;
   justify-content: space-evenly;
+  font-size: 2.5rem;
 }
-.title nav a {
-  text-decoration: none;
-  color: #8786A4;
-}
-.title nav a:hover {
-  color: #FF2E4D;
-  text-decoration: underline;
-}
-.body h3 {
-  padding: 80px;
-  display: flex;
-  font-size: 80px;
-  text-align: center;
-  justify-content: center;
-  color: white;
-  background-color: #35283A;
-}
-.info {
-  justify-content: center;
-  display: flex;
-  padding: 0 30px;
-  margin-top: -6%;
-}
-.info h2 {
-  display: flex;
-  font-size: 50px;
-  margin: 5%;
-  padding: 30px;
-  color: white;
+.btn-group .btn {
+  color: #fff;
+  border-radius: 5px;
+  opacity: 0.9;
+  margin-top: -2rem;
+  padding: 1rem 3rem;
   background-color: #8786A4;
-}
-.bottom {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 30px;
-  padding: 30px;
-  margin-bottom: 5%;
-}
-.bottom .button {
-  text-decoration: none;
-  background-color: #35283A;
-  color: white;
-  width: 200px;
-  padding: 10px 10px;
-  font-size: 25px;
-  border: 1px solid black;
-  border-radius: 20px;
-  align-items: center;
-  text-align: center;
+  transition: 0.2s all ease-in-out;
   cursor: pointer;
 }
-.bottom .button:hover {
-  color: #35283A;
-  background-color: white;
+.btn-group .btn:hover {
+  opacity: 0.6;
+}
+.bottom {
+  display: block;
+  text-align: center;
+  height: 30vh;
+}
+.bottom .learn-more {
+  font-size: 2.5rem;
+  margin-top: 8rem;
+  margin-bottom: 4.5rem;
+  text-decoration: underline;
+}
+.bottom .about-btn {
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 5px;
+  opacity: 0.9;
+  margin-top: -2rem;
+  padding: 1rem 3rem;
+  background-color: #8786A4;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.bottom .about-btn:hover {
+  opacity: 0.6;
 }
 .why {
   padding: 80px;
