@@ -808,26 +808,58 @@ footer p {
     height: 250px;
   }
 }
-.body {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 40px;
+.content .text-box {
+  padding: 60px 0;
 }
-.body h2 {
-  font-size: 50px;
-  padding: 20px;
+.content .text-box:first-child {
+  padding-top: 100px;
 }
-.body .easier {
-  padding: 10px 50px;
-  background-color: #F1F1F1;
+.content .text-box .container {
+  padding-left: 40px;
+  padding-right: 40px;
 }
-.body .faster {
-  color: white;
+@media (min-width: 780px) {
+  .content .text-box .container {
+    width: 750px;
+  }
+}
+@media (min-width: 990px) {
+  .content .text-box .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .content .text-box .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1600px) {
+  .content .text-box .container {
+    width: 1300px;
+  }
+}
+@media (min-width: 1800px) {
+  .content .text-box .container {
+    width: 1400px;
+  }
+}
+.content .text-box h2 {
+  color: #35283A;
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+.content .text-box p {
+  color: #222;
+  font-size: 2.25rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+.content .text-box.alt {
+  padding: 200px 0;
   background-color: #35283A;
-  padding: 100px 50px;
-  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
 }
-.body .smarter {
-  padding: 10px 50px;
-  background-color: #F1F1F1;
+.content .text-box.alt h2,
+.content .text-box.alt p {
+  color: #fff;
 }
