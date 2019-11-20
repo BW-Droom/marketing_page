@@ -408,7 +408,7 @@ textarea {
 body {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
-  margin-top: 70px;
+  margin-top: 65px;
 }
 h1,
 h2,
@@ -472,7 +472,7 @@ a {
   box-shadow: 0px -2px 18px 0px rgba(0, 0, 0, 0.2);
 }
 .nav-bar .nav-container {
-  height: 70px;
+  height: 65px;
   margin: 0 20px;
   display: flex;
   flex-flow: row nowrap;
@@ -656,37 +656,61 @@ footer {
 .why {
   padding: 80px;
   display: flex;
-  font-size: 80px;
   text-align: center;
   justify-content: center;
-  color: white;
   background-color: #35283A;
 }
-.body {
+.why h1 {
+  color: white;
+  font-size: 80px;
+}
+.material {
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
 }
-.body h2 {
+.material h2 {
   font-size: 50px;
   padding: 20px;
 }
-.body .easier {
+.material .easier {
   background-color: #F1F1F1;
   padding: 10px 50px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
 }
-.body .faster {
+.material .easier img {
+  width: 90px;
+  height: 90px;
+}
+.material .faster {
   color: white;
   background-color: #35283A;
   padding: 100px 50px;
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
 }
-.body .smarter {
+.material .faster h2 {
+  color: white;
+}
+.material .faster img {
+  width: 90px;
+  height: 90px;
+}
+.material .smarter {
   background-color: #F1F1F1;
   padding: 10px 50px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
 }
-
-
+.material .smarter img {
+  width: 90px;
+  height: 90px;
+}
 @media only screen and (max-width:700px) {
   .main-content .title {
     font-size: 3.5rem;
@@ -709,6 +733,24 @@ footer {
 @media only screen and (max-width: 600px) {
   .main-content .title {
     font-size: 2.7rem;
+  }
+  .material {
+    display: flex;
+  }
+  .material .easier {
+    display: flex;
+    flex-direction: column;
+  }
+  .material .faster {
+    display: flex;
+    flex-direction: column;
+  }
+  .material .smarter {
+    display: flex;
+    flex-direction: column;
+  }
+  .material img {
+    display: none;
   }
 }
 @media only screen and (max-width:650px) {
