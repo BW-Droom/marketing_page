@@ -3,6 +3,9 @@
 
 - [Droom Product Vision (PVD)](https://docs.google.com/document/d/1bsorUpw2ouQi56Zl-gvDdWeeLAQfQX9skcXsw2bv6KU/edit#heading=h.8k66cyet0u4q)
 
+### What is it?
+This git repository holds the source code for the Droom marketing page. This includes 2 main pages; landing page (`index.html`) and an about page (`about.html`). These pages were made with the help of HTML, CSS, LESS (CSS precompiler) and JavaScript.
+
 ### Technology
 - HTML5
 - CSS3
@@ -18,15 +21,4 @@
 - [Deployed Site](https://droom-marketing.netlify.com/)
 
 ## Support
-- *contact info*
-
-Directions for Completing this ReadMe (Delete This When Done):
-- [] 1. Included the following
-	- [x] Name of Project
-	- [x] Links to Deployed Version
-	- [] A description of your work.  What did you accomplish?
-	- [x] The technology used to complete the project.
-	- [] Steps for recreating this project using the above technology (including endpoints and what they are used for)
-- [x] 2. Give credit - include a list of your teammates and links to their github profiles.
-- [x] 3. Links to other parts of the project (github repository and deployed version)
-- [] 4. A Message About support for this repository and your contact information incase anyone has questions.
+If you have any questions or want to contribute to this repo, feel free to contact any of the aforementioned team members.
