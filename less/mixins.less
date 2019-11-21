@@ -1,3 +1,15 @@
+
+//           none
+.user-select(@attr) {
+  -webkit-touch-callout: @attr;
+    -webkit-user-select: @attr;
+     -khtml-user-select: @attr;
+       -moz-user-select: @attr;
+        -ms-user-select: @attr;
+            user-select: @attr;
+}
+
+
 //  e.g     all     100ms  ease
 .transition(@which, @time, @effect) {
   -webkit-transition: @time @which @effect;
@@ -7,35 +19,41 @@
           transition: @time @which @effect;
 }
 
-//  e.g     0px          2px        4px     10px      #000
+
+//  e.g     0px          2px        4px    0px     #000
 .box-shadow(@horizontal, @vertical, @blur, @spread, @color) {
   -webkit-box-shadow: @horizontal @vertical @blur @spread @color;
      -moz-box-shadow: @horizontal @vertical @blur @spread @color;
       -ms-box-shadow: @horizontal @vertical @blur @spread @color;
           box-shadow: @horizontal @vertical @blur @spread @color;
 }
- 
-  
-.btns(@bg-color, @color) {
-  background-color: @bg-color;
-  color: @color;
-  border-radius: 5px;
-  opacity: 0.9;
-  margin-top: -2rem;
-  padding: 1rem 3rem;
-  background-color: @dark-alt;
-  transition: 0.2s all ease-in-out;
-  cursor: pointer;
 
-  &:hover {
-  opacity: 0.6;
-  }
+
+.flex-box(@flex-direction, @justify-content, @align-items) {
+  display: flex;
+  flex-direction: @flex-direction;
+  align-items: @align-items;
+  justify-content: @justify-content;
+}
+
+.flex-center {
+  .flex-box(row, center, center);
 }
 
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+.button(@color, @bg-color, @bg-color-hover) {
+  color: @color;
+  cursor: pointer;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  padding: 1rem 3.5rem;
+  background-color: @bg-color;
+  .user-select(none);
+  .transition(all, 100ms, ease);
+  .box-shadow(0px, 3px, 6px, 0px, lighten(@bg-color, 20%));
+
+  &:hover {
+    background-color: @bg-color-hover;
+  }
 }
